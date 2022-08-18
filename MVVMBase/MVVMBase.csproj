@@ -8,7 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ValueConverters\" />
+    <Folder Include="Controls\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\" />
   </ItemGroup>
 
 </Project>
