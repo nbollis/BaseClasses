@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
 namespace MVVMBase
@@ -17,6 +19,28 @@ namespace MVVMBase
         /// Considering how fast this check will always be it isn't an issue to globally lock all callers.
         /// </summary>
         protected object mPropertyValueCheckLock = new object();
+
+        /// <summary>
+        /// Sets the value of any property and also calls the OnPropertyChanged method
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="backingStore"></param>
+        /// <param name="value"></param>
+        /// <param name="propertyName"></param>
+        /// <param name="onChanged"></param>
+        /// <returns></returns>
+        protected bool SetProperty<T>(ref T backingStore, T value,
+            [CallerMemberName] string propertyName = "",
+            Action onChanged = null)
+        {
+            if (EqualityComparer<T>.Default.Equals(backingStore, value))
+                return false;
+
+            backingStore = value;
+            onChanged?.Invoke();
+            OnPropertyChanged(propertyName);
+            return true;
+        }
 
         #endregion
 
