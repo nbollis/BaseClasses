@@ -9,9 +9,12 @@ namespace CoinCollection
     public class Book
     {
         public BookType BookType { get; }
-        public List<ICoin> Coins { get; }
+        public List<Coin> Coins { get; }
+        public IEnumerable<Coin> MissingCoins => Coins.Where(p => !p.Have);
+        public IEnumerable<Coin> AcquiredCoins => Coins.Where(p => p.Have);
+        public double CompletionPercentage => Math.Round((double)AcquiredCoins.Count() / Coins.Count * 100, 0);
 
-        public Book(BookType bookType, List<ICoin> coins)
+        public Book(BookType bookType, List<Coin> coins)
         {
             BookType = bookType;
             Coins = coins;
