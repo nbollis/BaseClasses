@@ -9,6 +9,7 @@
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
         x:Name="AppWindow"
+        d:DataContext="{Binding local:WindowViewModel}"
         Icon="{Binding Icon}"
         MinHeight="{Binding WindowMinimumHeight}"
         MinWidth="{Binding WindowMinimumWidth}"
