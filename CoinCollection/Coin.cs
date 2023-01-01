@@ -31,5 +31,10 @@ namespace CoinCollection
         {
             Have = true;
         }
+
+        public override string ToString()
+        {
+            return Year + " " + SpecialtyInfo + " " + CoinType;
+        }
     }
 }

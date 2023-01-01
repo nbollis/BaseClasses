@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVVMBase", "MVVMBase\MVVMBa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Activities", "Activities\Activities.csproj", "{373C413E-EB1C-4423-99F7-EB7E141B87C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoinCollection", "CoinCollection\CoinCollection.csproj", "{A0F207D5-B403-4E5D-9D14-35F05375A483}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoinCollection", "CoinCollection\CoinCollection.csproj", "{A0F207D5-B403-4E5D-9D14-35F05375A483}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{F22B99A5-6D0B-4E65-9AD6-06FAD58930CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{F22B99A5-6D0B-4E65-9AD6-06FAD58930CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilityClasses", "UtilityClasses\UtilityClasses.csproj", "{103D7556-D33D-4DBB-B106-A1C33131302E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F22B99A5-6D0B-4E65-9AD6-06FAD58930CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F22B99A5-6D0B-4E65-9AD6-06FAD58930CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F22B99A5-6D0B-4E65-9AD6-06FAD58930CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{103D7556-D33D-4DBB-B106-A1C33131302E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{103D7556-D33D-4DBB-B106-A1C33131302E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{103D7556-D33D-4DBB-B106-A1C33131302E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{103D7556-D33D-4DBB-B106-A1C33131302E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

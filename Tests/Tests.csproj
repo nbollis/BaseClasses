@@ -20,4 +20,19 @@
     <ProjectReference Include="..\CoinCollection\CoinCollection.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="CoinDataFiles\Penny - Volume I.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="CoinDataFiles\Penny - Volume II.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="CoinDataFiles\Penny - Volume III.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="CoinDataFiles\Penny - Volume IV.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
